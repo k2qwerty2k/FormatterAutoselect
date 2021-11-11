@@ -1,0 +1,68 @@
+// Do NOT edit anything in the left-hand pane.
+// Copy the whole tree from there to here.
+{
+	"debug": true,
+
+	"aliases": {
+		"C" : [
+			"source.iot",
+			"source.c++",
+			"source.c",
+		],
+		"php": [
+			"source.php"
+		],
+		"css": [
+			"source.css",
+			"source.less"
+		],
+		"js": [
+			"source.js"
+		],
+		"default": [
+			"source.json"
+		]
+	},
+
+	"scope2command": {
+		"C": {
+			"command": "run_format",
+			"args": {
+				"identifier": "clangformat"
+			},
+			"context": "view"
+		},
+
+		"php": {
+			"command": "run_format",
+			"args": {
+				"identifier": "phpcsfixer"
+			},
+			"context": "view"
+		},
+
+		"css": {
+			"command": "run_format",
+			"args": {
+				"identifier": "prettier"
+			},
+			"context": "view"
+		},
+
+		"js": {
+			"command": "run_format",
+			"args": {
+				"identifier": "jsbeautifier"
+			},
+			"context": "view"
+		},
+
+		"default" : {
+			"command": "run_format",
+			"args": {
+				"identifier": ""
+			},
+			"context": "view"
+		}
+	}
+}
